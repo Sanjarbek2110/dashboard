@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-Plus-Jakarta-Sans text-[#FFF]">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <div class="wrapper flex pt-[10px] pl-[10px] pb-[10px] bg-[url('./images/body_bg.png')] bg-cover bg-no-repeat overflow-x-hidden">
+
+        <div class="sidebar-left relative pb-[23px] max-w-[265px] w-[100%] h-[1135px] pt-[36px] pl-[15px] pr-[15px] rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(157.2deg,rgba(6,11,38,0.94)_31.883%,rgba(26,31,55,0)_100%)] max-[1420px]:hidden">
+            <div class="sidebar-header mb-[22px]">
+                <h2 class="mb-[31px] bg-[linear-gradient(170.74deg,_rgb(255,255,255),_rgba(117,122,140,0))] bg-clip-text text-transparent font-[400] leading-[100%] tracking-[0.18em] text-center ">VISION UI FREE</h2>
+                <img class="w-[100%]" src="./images/left-slidebar-header-line.png" alt="">
+            </div>
+
+            <div class="sidebar-menu pl-[7px] pr-[7px]">
+                <ul class="list-none flex flex-col gap-[12px]">
+                    <li class="group">
+                      <a href="./dashboard.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                        <img src="./images/Dashboard (2).png" alt="" class="transition-all duration-[300ms]">
+                        <img class="hidden group-hover:hidden w-[30px] h-[30px] transition-all duration-[300ms]" src="./images/Dashboard.png" alt="">Dashboard
+                      </a>
+                    </li>
+                    <li class="group">
+                      <a href="./tables_page.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] rounded-[15px] shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] bg-[rgb(26,31,55)] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px]  transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                        <img src="./images/Tables .png" alt="" class="block group-hover: transition-all duration-[300ms]">
+                        <!-- <img class="hidden group-hover:block w-[30px] h-[30px] transition-all duration-[3000ms]" src="./images/Tables .png" alt="">  -->Tables
+                      </a>
+                    </li>
+                    <li class="group">
+                      <a href="./billing_pages.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                        <img src="./images/slider-left-menu3.png" alt="" class="block group-hover: transition-all duration-[300ms]">
+                        <!-- <img class="hidden group-hover:block w-[30px] h-[30px] transition-all duration-[3000ms]" src="./images/Billing.png" alt="">  -->Billing
+                      </a>
+                    </li>
+                </ul>
+                
+                <h3 class="text-[16px] text-[#FFF] ml-[16px] mt-[25px] mb-[25px]">ACCOUNT PAGES</h3>
+                
+                <ul class="ist-none flex flex-col gap-[12px]">
+                    <li class="group">
+                        <a href="./profile_page.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                            <img src="./images/Profile.png" alt="" class="block group-hover: transition-all duration-[300ms]">
+                            <!-- <img class="hidden group-hover:block w-[30px] h-[30px] transition-all duration-[3000ms]" src="./images/Profile (1).png" alt=""> Account -->
+                            Profile
+                        </a>
+                    </li>
+
+                    <li class="group">
+                        <a href="./index.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                            <img src="./images/Sign In.png" alt="" class="block group-hover: transition-all duration-[300ms]">
+                            Sign In
+                        </a>
+                    </li>
+
+                    <li class="group">
+                        <a href="./sign_up.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                            <img src="./images/Sign Up.png" alt="" class="block group-hover: transition-all duration-[300ms]">
+                            Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#">
+                <img src="./images/Need Help.png" alt="" class="absolute l-[8px] bottom-[23px]">
+            </a>
+
+        </div>
+
+        <div class="slidebar-right w-[100%] pt-[22px] pl-[22px] pr-[22px]">
+
+            <!--  -->
+            <header class="mb-7">
+                <div class="container w-[100%] mx-auto">
+
+                    <div class="flex justify-between max-[768px]:items-center">
+                        <p class="w-auto mt-[15px] flex flex-col gap-y-[6px] leading-[140%] text-[#FFF]">
+                            <span class="text-[16px]"> <span class="text-[#A0AEC0] font-Helvetica-Neue">Pages</span> /  Dashboard </span>
+                            <span class="text-[18px]">Dashboard</span>
+                        </p>
+
+                        <div class="flex items-center gap-[18px] max-[768px]:hidden">
+                            <label class="flex gap-x-3 items-center w-[200px] py-[13px] px-[12px] outline-none bg-[#0F1535] rounded-[15px] border-[0.5px] border-solid border-[rgba(226,232,240,0.3)">
+                                <img src="./images/search_icon.png" alt="">
+                                <input type=" search" class="w-[100%] outline-none text-[16px]" placeholder="Type here..."/>
+                            </label>
+
+
+                            <a href="#" class="flex items-center gap-x-[5px]">
+                                <img src="./images/sing_in2.png" alt="">
+                                <p class="text-[#718096] leading-[150%]">Sign In</p>
+                            </a>
+
+                            <img src="./images/setting.png" alt="" class="cursor-pointer">
+
+                            <img src="./images/notifications.png" alt="" class="cursor-pointer">
+                        </div>
+
+                        <img src="./images/hamburger.png" alt="" id="hamburgerBtn" class="cursor-pointer hidden max-[768px]:block">
+                    </div>
+                </div>
+            </header>
+
+            <!--  -->
+            <section class="mb-[24px]">
+                <div class="container w-[100%] mx-auto">
+                    <div class="p-[22px] pt-[28px] rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(175.7deg,_rgba(6,11,40,0.74)_22.584%,_rgba(10,14,35,0.71)_99.214%)]">
+                        <h2 class="text-xl font-bold mb-4">Authors Table</h2>
+                        <div class="overflow-x-auto">
+                          <table class="w-full text-left table-auto">
+                            <thead>
+                              <tr class="text-gray-400 text-sm border-b border-gray-700">
+                                <th class="py-3 px-4">Author</th>
+                                <th class="py-3 px-4">Function</th>
+                                <th class="py-3 px-4">Status</th>
+                                <th class="py-3 px-4">Employed</th>
+                                <th class="py-3 px-4"></th>
+                              </tr>
+                            </thead>
+                            <tbody class="text-sm">
+                              <!-- Row -->
+                              <tr class="border-b border-gray-700 hover:bg-blue-900/30">
+                                <td class="py-4 px-4 flex items-center gap-3  max-[640px]:w-[200px]">
+                                  <img src="./table images/jackson.png" alt="" class="">
+                                  <div>
+                                    <div class="font-semibold">Esthera Jackson</div>
+                                    <div class="text-gray-400 text-xs">esthera@simmmp.le</div>
+                                  </div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <div class="font-medium">Manager</div>
+                                  <div class="text-gray-400 text-xs">Organization</div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <span class="bg-green-500 text-xs px-[15px] py-[2.5px] rounded-[8px] text-white">Online</span>
+                                </td>
+                                <td class="py-4 px-4 text-gray-300">14/06/21</td>
+                                <td class="py-4 px-4">
+                                    <p class="text-[#A0AEC0] cursor-pointer hover:underline">Edit</p>
+                                </td>
+                              </tr>
+                      
+                              <!-- Qolgan 5 ta user ham xuddi shu formatda: -->
+                              <!-- Alexa Liras -->
+                              <tr class="border-b border-gray-700 hover:bg-blue-900/30">
+                                <td class="py-4 px-4 flex items-center gap-3  max-[640px]:w-[200px]">
+                                  <img src="./table images/liras.png" alt="" class="">
+                                  <div>
+                                    <div class="font-semibold">Alexa Liras</div>
+                                    <div class="text-gray-400 text-xs">alexa@simmmp.le</div>
+                                  </div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <div class="font-medium">Programmer</div>
+                                  <div class="text-gray-400 text-xs">Developer</div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <span class="border border-[rgb(255,255,255)] text-[14px] px-[10.5px] py-[2.5px] rounded-[8px] text-white">Offline</span>
+                                </td>
+                                <td class="py-4 px-4 text-gray-300">14/06/21</td>
+                                <td class="py-4 px-4">
+                                    <p class="text-[#A0AEC0] cursor-pointer hover:underline">Edit</p>
+                                </td>
+                              </tr>
+                      
+                              <!-- Laurent Michael -->
+                              <tr class="border-b border-gray-700 hover:bg-blue-900/30">
+                                <td class="py-4 px-4 flex items-center gap-3  max-[640px]:w-[200px]">
+                                  <img src="./table images/michael.png" alt="" class="">
+                                  <div>
+                                    <div class="font-semibold">Laurent Michael</div>
+                                    <div class="text-gray-400 text-xs">laurent@simmmp.le</div>
+                                  </div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <div class="font-medium">Executive</div>
+                                  <div class="text-gray-400 text-xs">Projects</div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <span class="bg-green-500 text-xs px-[15px] py-[2.5px] rounded-[8px] text-white">Online</span>
+                                </td>
+                                <td class="py-4 px-4 text-gray-300">14/06/21</td>
+                                <td class="py-4 px-4">
+                                    <p class="text-[#A0AEC0] cursor-pointer hover:underline">Edit</p>
+                                </td>
+                              </tr>
+                      
+                              <!-- Freduardo Hill -->
+                              <tr class="border-b border-gray-700 hover:bg-blue-900/30">
+                                <td class="py-4 px-4 flex items-center gap-3  max-[640px]:w-[200px]">
+                                  <img src="./table images/hill.png" alt="" class="">
+                                  <div>
+                                    <div class="font-semibold">Freduardo Hill</div>
+                                    <div class="text-gray-400 text-xs">freduardo@simmmp.le</div>
+                                  </div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <div class="font-medium">Manager</div>
+                                  <div class="text-gray-400 text-xs">Organization</div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <span class="bg-green-500 text-xs px-[15px] py-[2.5px] rounded-[8px] text-white">Online</span>
+                                </td>
+                                <td class="py-4 px-4 text-gray-300">14/06/21</td>
+                                <td class="py-4 px-4">
+                                    <p class="text-[#A0AEC0] cursor-pointer hover:underline">Edit</p>
+                                </td>
+                              </tr>
+                      
+                              <!-- Daniel Thomas -->
+                              <tr class="border-b border-gray-700 hover:bg-blue-900/30">
+                                <td class="py-4 px-4 flex items-center gap-3  max-[640px]:w-[200px]">
+                                  <img src="./table images/daniel.png" alt="" class="">
+                                  <div>
+                                    <div class="font-semibold">Daniel Thomas</div>
+                                    <div class="text-gray-400 text-xs">daniel@simmmp.le</div>
+                                  </div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <div class="font-medium">Programmer</div>
+                                  <div class="text-gray-400 text-xs">Developer</div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <span class="border border-[rgb(255,255,255)] text-[14px] px-[10.5px] py-[2.5px] rounded-[8px] text-white">Offline</span>
+                                </td>
+                                <td class="py-4 px-4 text-gray-300">14/06/21</td>
+                                <td class="py-4 px-4">
+                                    <p class="text-[#A0AEC0] cursor-pointer hover:underline">Edit</p>
+                                </td>
+                              </tr>
+                      
+                              <!-- Mark Wilson -->
+                              <tr class="hover:bg-blue-900/30">
+                                <td class="py-4 px-4 flex items-center gap-3  max-[640px]:w-[200px]">
+                                  <img src="./table images/mark.png" alt="" class="">
+                                  <div>
+                                    <div class="font-semibold">Mark Wilson</div>
+                                    <div class="text-gray-400 text-xs">mark@simmmp.le</div>
+                                  </div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <div class="font-medium">Designer</div>
+                                  <div class="text-gray-400 text-xs">UI/UX Design</div>
+                                </td>
+                                <td class="py-4 px-4">
+                                  <span class="border border-[rgb(255,255,255)] text-[14px] px-[10.5px] py-[2.5px] rounded-[8px] text-white">Offline</span>
+                                </td>
+                                <td class="py-4 px-4 text-gray-300">14/06/21</td>
+                                <td class="py-4 px-4">
+                                    <p class="text-[#A0AEC0] cursor-pointer hover:underline">Edit</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  -->
+            <section class="mb-[30px]">
+                <div class="container w-[100%] mx-auto flex justify-between gap-y-6 max-[1025px]:flex-col max-[1025px]:gap-y-[20px]">
+
+
+                    <div class="w-[100%] pt-[28px] pl-[21px] pr-[21px] pb-[31px] rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(175.7deg,_rgba(6,11,40,0.74)_11.859%,_rgba(10,14,35,0.71)_114.371%)] max-[1025px]:w-[100%] max-[500px]:h-auto overflow-x-auto">
+
+                        <div class="flex flex-col gap-y-[6px] mb-[28px]">
+                          <p class="text-[18px] font-bold">Projects</p>
+                          <p class="flex gap-x-[6px] items-center">
+                            <img src="./images/Vector (33).png" alt="">
+                            <span class="text-[#A0AEC0] text-[14px]">30 done this month</span>
+                          </p>
+                        </div>
+                      
+                        <!-- RESPONSIVE WRAPPER -->
+                        <div class="w-full overflow-x-auto">
+                          <table class="w-full text-left table-auto min-w-[600px]">
+                            <thead class="text-gray-300 border-b border-[#56577A]">
+                              <tr>
+                                <th class="pb-[12px] w-[450px] whitespace-nowrap w-[55%]">Companies</th>
+                                <th class="pb-[12px] w-[214px] whitespace-nowrap">Members</th>
+                                <th class="pb-[12px] w-[177px] whitespace-nowrap">Budget</th>
+                                <th class="pb-[12px] whitespace-nowrap">Completion</th>
+                                <th class="pr-5"></th>
+                              </tr>
+                            </thead>
+                      
+                            <tbody class="text-white text-sm">
+                              <!-- Example Row -->
+                              <tr class="border-b border-[#56577A]">
+                                <td class="py-[16px] flex items-center gap-x-[17px] min-w-[180px]">
+                                  <img src="./images/Adobe_XD_CC_icon 1.png" alt="">
+                                  Chakra Soft UI Version
+                                </td>
+                                <td class="py-[16px] min-w-[100px]">
+                                  <img src="./images/Avatars Group 3 (Horizontal).png" alt="">
+                                </td>
+                                <td class="py-[16px] min-w-[80px]">$14,000</td>
+                                <td class="py-[16px] min-w-[100px]">
+                                  <span class="font-bold text-[14px]">60%</span>
+                                  <img src="./images/Progress (4).png" alt="">
+                                </td>
+                                <td>
+                                    <img src="./table images/Vector (35).png" alt="" class="cursor-pointer ml-5">
+                                </td>
+                              </tr>
+                              <!-- Copy rest of your rows here as-is -->
+
+                              <!-- Row 2 -->
+                              <tr class="border-b border-[#56577A]">
+                                <td class="py-[16px] flex items-center gap-x-[17px]">
+                                  <img src="./images/Icon.svg" alt="">
+                                  Add Progress Track
+                                </td>
+                                <td class="py-[16px]">
+                                  <img src="./images/Avatars Group 3 (Horizontal) (1).png" alt="">
+                                </td>
+                                <td class="py-[16px]">$3,000</td>
+                                <td class="py-[16px]">
+                                    <span class="font-bold text-[14px]">10%</span>
+                                    <img src="./images/Progress (5).png" alt="">
+                                </td>
+                                <td>
+                                    <img src="./table images/Vector (35).png" alt="" class="cursor-pointer ml-5">
+                                </td>
+                            </tr>
+
+                            <!-- Row 3 -->
+                            <tr class="border-b border-[#56577A]">
+                                <td class="py-[16px] flex items-center gap-x-[17px]">
+                                  <img src="./images/slack-new-logo 1 (1).png" alt="">
+                                  Fix Platform Errors
+                                </td>
+                                <td class="py-[16px]">
+                                    <img src="./images/Avatars Group 3 (Horizontal) (1).png" alt="">
+                                </td>
+                                <td class="py-[16px]">Not set</td>
+                                <td class="py-[16px]">
+                                    <span class="font-bold text-[14px]">100%</span>
+                                    <img src="./images/Progress (6).png" alt="">
+                                </td>
+                                <td>
+                                    <img src="./table images/Vector (35).png" alt="" class="cursor-pointer ml-5">
+                                </td>
+                            </tr>
+
+                            <!-- Row 4 -->
+                            <tr class="border-b border-[#56577A]">
+                                <td class="py-[16px] flex items-center gap-x-[17px]">
+                                  <img src="./images/spotify-2 1.png" alt="">
+                                  Launch our Mobile App
+                                </td>
+                                <td class="py-[16px]">
+                                    <img src="./images/Avatars Group 3 (Horizontal) (2).png" alt="">
+                                </td>
+                                <td class="py-[16px]">$32,000</td>
+                                <td class="py-[16px]">
+                                    <span class="font-bold text-[14px]">100%</span>
+                                    <img src="./images/Progress (6).png" alt="">
+                                </td>
+                                <td>
+                                    <img src="./table images/Vector (35).png" alt="" class="cursor-pointer ml-5">
+                                </td>
+                            </tr>
+
+                            <!-- Row 5 -->
+                            <tr class="border-b border-[#56577A]">
+                                <td class="py-[16px] flex items-center gap-x-[17px]">
+                                  <img src="./images/jira-3 1.png" alt="">
+                                  Add the New Pricing Page
+                                </td>
+                                <td class="py-[16px]">
+                                  <img src="./images/Avatars Group 3 (Horizontal).png" alt="">
+                                </td>
+                                <td class="py-[16px]">$400</td>
+                                <td class="py-[16px]">
+                                    <span class="font-bold text-[14px]">25%</span>
+                                    <img src="./images/Progress (7).png" alt="">
+                                </td>
+                                <td>
+                                    <img src="./table images/Vector (35).png" alt="" class="cursor-pointer ml-5">
+                                </td>
+                            </tr>
+
+                            <!-- Row 6 -->
+                            <tr class="">
+                                <td class="py-[16px] flex items-center gap-x-[17px]">
+                                  <img src="./images/invision 1.svg" alt="">
+                                  Redesign New Online Shop
+                                </td>
+                                <td class="py-[16px]">
+                                  <img src="./images/Avatars Group 3 (Horizontal) (1).png" alt="">
+                                </td>
+                                <td class="py-[16px]">$7,600</td>
+                                <td class="py-[16px]">
+                                    <span class="font-bold text-[14px]">40%</span>
+                                    <img src="./images/Progress (8).png" alt="">
+                                </td>
+                                <td>
+                                    <img src="./table images/Vector (35).png" alt="" class="cursor-pointer ml-5">
+                                </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      
+                    </div>
+                </div>
+            </section>
+
+            <!--  -->
+            <footer class="mb-[30px]">
+                <div class="container w-[100%] mx-auto flex justify-between max-[768px]:flex-col max-[768px]:gap-y-[20px] max-[768px]:items-center">
+                    <p class="max-[1025px]:text-[14px] max-[490px]:text-center">@ 2021, Made with ❤️ by <span class="font-semibold">Simmmple & Creative</span> Tim for a better web</p>
+
+                    <ul class="flex gap-x-[45px] max-[1025px]:gap-x-[20px]">
+                        <li><a class="leading-[150%]" href="#">Marketplace</a></li>
+                        <li><a class="leading-[150%]" href="#">Blog</a></li>
+                        <li><a class="leading-[150%]" href="#">License</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="absolute top-[-200%] right-[0] transition-all duration-500 ease-in-out z-40 
+            max-w-[265px] w-full h-[800px] bg-[linear-gradient(157.2deg,rgba(6,11,38,0.94)_31.883%,rgba(26,31,55,0)_100%)] 
+            pt-[36px] pl-[15px] pr-[15px] rounded-l-[20px] backdrop-blur-[120px] overflow-x-auto">
+
+    <!-- Sidebar content -->
+    <div class="sidebar-header mb-[22px]">
+    <h2 class="mb-[31px] bg-[linear-gradient(170.74deg,_rgb(255,255,255),_rgba(117,122,140,0))] bg-clip-text text-transparent font-[400] leading-[100%] tracking-[0.18em] text-center ">VISION UI FREE</h2>
+    <img class="w-full" src="./images/left-slidebar-header-line.png" alt="">
+    </div>
+
+    <div class="sidebar-menu pl-[7px] pr-[7px]">
+    <ul class="list-none flex flex-col gap-[12px]">
+    <li class="group">
+        <a href="./dashboard.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+        <img src="./images/Dashboard (2).png" alt="">
+        Dashboard
+        </a>
+    </li>
+    <li class="group">
+        <a href="./tables_page.html" class="silka h-[54px] rounded-[15px] shadow-md bg-[#1A1F37] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+        <img src="./images/Tables .png" alt="">
+        Tables
+        </a>
+    </li>
+    <li class="group">
+        <a href="./billing_pages.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+        <img src="./images/slider-left-menu3.png" alt="">
+        Billing
+        </a>
+    </li>
+    </ul>
+
+    <h3 class="text-[16px] text-[#FFF] ml-[16px] mt-[25px] mb-[25px]">ACCOUNT PAGES</h3>
+
+    <ul class="list-none flex flex-col gap-[12px]">
+    <li class="group">
+        <a href="./profile_page.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+        <img src="./images/Profile.png" alt="">
+        Profile
+        </a>
+    </li>
+    <li class="group">
+        <a href="./index.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+        <img src="./images/Sign In.png" alt="">
+        Sign In
+        </a>
+    </li>
+    <li class="group">
+        <a href="./sign_up.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+            <img src="./images/Sign Up.png" alt="">
+            Sign Up
+            </a>
+        </li>
+        </ul>
+        </div>
+
+        <a href="#">
+        <img src="./images/Need Help.png" alt="" class="absolute left-[15px] bottom-[23px]">
+        </a>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-Plus-Jakarta-Sans text-[#FFF]">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <div class="wrapper flex pt-[10px] pl-[10px] pb-[10px] bg-[url('./images/body_bg.png')] bg-cover bg-no-repeat overflow-x-hidden">
+
+        <div class="sidebar-left relative pb-[23px] max-w-[265px] w-[100%] h-[1135px] pt-[36px] pl-[15px] pr-[15px] rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(157.2deg,rgba(6,11,38,0.94)_31.883%,rgba(26,31,55,0)_100%)] max-[1420px]:hidden">
+            <div class="sidebar-header mb-[22px]">
+                <h2 class="mb-[31px] bg-[linear-gradient(170.74deg,_rgb(255,255,255),_rgba(117,122,140,0))] bg-clip-text text-transparent font-[400] leading-[100%] tracking-[0.18em] text-center ">VISION UI FREE</h2>
+                <img class="w-[100%]" src="./images/left-slidebar-header-line.png" alt="">
+            </div>
+
+            <div class="sidebar-menu pl-[7px] pr-[7px]">
+                <ul class="list-none flex flex-col gap-[12px]">
+                    <li class="group">
+                      <a href="./dashboard.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                        <img src="./images/Dashboard (2).png" alt="" class="transition-all duration-[300ms]">
+                        <img class="hidden group-hover:hidden w-[30px] h-[30px] transition-all duration-[300ms]" src="./images/Dashboard.png" alt="">Dashboard
+                      </a>
+                    </li>
+                    <li class="group">
+                      <a href="./tables_page.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                        <img src="./images/slider-left-menu2.png" alt="" class="block group-hover: transition-all duration-[300ms]">
+                        <!-- <img class="hidden group-hover:block w-[30px] h-[30px] transition-all duration-[3000ms]" src="./images/Tables .png" alt="">  -->Tables
+                      </a>
+                    </li>
+                    <li class="group">
+                      <a href="./billing_pages.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] rounded-[15px] shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] bg-[rgb(26,31,55)] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                        <img src="./images/Billing.png" alt="" class="block group-hover: transition-all duration-[300ms]">
+                        <!-- <img class="hidden group-hover:block w-[30px] h-[30px] transition-all duration-[3000ms]" src="./images/Billing.png" alt="">  -->Billing
+                      </a>
+                    </li>
+                </ul>
+                
+                <h3 class="text-[16px] text-[#FFF] ml-[16px] mt-[25px] mb-[25px]">ACCOUNT PAGES</h3>
+                
+                <ul class="ist-none flex flex-col gap-[12px]">
+                    <li class="group">
+                        <a href="./profile_page.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                            <img src="./images/Profile.png" alt="" class="block group-hover: transition-all duration-[300ms]">
+                            <!-- <img class="hidden group-hover:block w-[30px] h-[30px] transition-all duration-[3000ms]" src="./images/Profile (1).png" alt=""> Account -->
+                            Profile
+                        </a>
+                    </li>
+
+                    <li class="group">
+                        <a href="./index.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                            <img src="./images/Sign In.png" alt="" class="block group-hover: transition-all duration-[300ms]">
+                            Sign In
+                        </a>
+                    </li>
+
+                    <li class="group">
+                        <a href="./sign_up.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] transition-all duration-[300ms] hover:rounded-[15px] hover:shadow-[0px_3.5px_5.5px_0px_rgba(0,0,0,0.02)] hover:bg-[#1A1F37] text-[#FFF]">
+                            <img src="./images/Sign Up.png" alt="" class="block group-hover: transition-all duration-[300ms]">
+                            Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#">
+                <img src="./images/Need Help.png" alt="" class="absolute l-[8px] bottom-[23px]">
+            </a>
+
+        </div>
+
+        <div class="slidebar-right w-[100%] pt-[22px] pl-[22px] pr-[22px]">
+
+            <!--  -->
+            <header class="mb-7">
+                <div class="container w-[100%] mx-auto">
+
+                    <div class="flex justify-between max-[768px]:items-center">
+                        <p class="w-auto mt-[15px] flex flex-col gap-y-[6px] leading-[140%] text-[#FFF]">
+                            <span class="text-[16px]"> <span class="text-[#A0AEC0] font-Helvetica-Neue">Pages</span> /  Dashboard </span>
+                            <span class="text-[18px]">Dashboard</span>
+                        </p>
+
+                        <div class="flex items-center gap-[18px] max-[768px]:hidden">
+                            <label class="flex gap-x-3 items-center w-[200px] py-[13px] px-[12px] outline-none bg-[#0F1535] rounded-[15px] border-[0.5px] border-solid border-[rgba(226,232,240,0.3)">
+                                <img src="./images/search_icon.png" alt="">
+                                <input type=" search" class="w-[100%] outline-none text-[16px]" placeholder="Type here..."/>
+                            </label>
+
+
+                            <a href="#" class="flex items-center gap-x-[5px]">
+                                <img src="./images/sing_in2.png" alt="">
+                                <p class="text-[#718096] leading-[150%]">Sign In</p>
+                            </a>
+
+                            <img src="./images/setting.png" alt="" class="cursor-pointer">
+
+                            <img src="./images/notifications.png" alt="" class="cursor-pointer">
+                        </div>
+
+                        <img src="./images/hamburger.png" alt="" id="hamburgerBtn" class="cursor-pointer hidden max-[768px]:block">
+                    </div>
+                </div>
+            </header>
+
+            <!--  -->
+            <section class="mb-6">
+                <div class="container w-[100%] mx-auto">
+                    <div class="rounded-[20px] text-white flex gap-6 justify-between max-[1025px]:flex-col">
+
+                        <div class="flex flex-col gap-y-[26px] w-[60%] max-[1025px]:w-[100%]">
+                            <!-- Left: Credit Card -->
+                            <div class="col-span-1 flex w-[100%] gap-[22px] max-[777px]:flex-col">
+                                <div class="w-[50%] pt-[26px] pl-[31px] pb-[37px] pr-[25px] rounded-[20px] bg-[url('./table%20images/Background%20(2).png')] bg-cover bg-no-repeat max-[777px]:w-full">
+                                    <div class="flex justify-between mb-[66px]">
+                                        <h2 class="text-lg font-semibold">Vision UI</h2>
+                                        <img src="./table images/Circles.png" alt="">
+                                    </div>
+                                    <div class="text-[24px] font-bold tracking-widest mb-3">7812 2139 0823 XXXX</div>
+                                    <div class="flex gap-x-[35px]">
+                                        <div>
+                                            <div class="text-[12px]">VALID THRU</div>
+                                            <div class="font-bold text-[14px]">05/24</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-[12px]">CVV</div>
+                                            <div class="font-bold text-[14px]">09X</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                
+                                <div class="w-[50%] mt-0 p-6 rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(128.44deg,_rgba(6,11,40,0.94)_23.729%,_rgba(10,14,35,0.49)_84.036%)] h-full flex flex-col justify-between max-[777px]:w-full">
+                                    <div class="pt-[18px] pl-[15px] pr-[20px] mb-5 pb-[23px] flex justify-between bg-[url('./table%20images/Balance.png')] bg-size-[100%] bg-no-repeat">
+                                        <div class="flex flex-col">
+                                            <h3 class="text-[14px] text--[#E9EDF7]">Credit Balance</h3>
+                                            <div class="text-[34px] font-bold">$25,215</div>
+                                        </div>
+
+                                        <div class="flex flex-col gap-y-9 items-end">
+                                            <img src="./table images/Vector (36).png" alt="">
+                                            <img src="./table images/Graph.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <p class="text-[#A0AEC0] mb-2">NEWEST</p>
+                                    
+                                    <div class="flex justify-between items-center">
+                                        <div class="flex gap-x-[11px] items-center">
+                                            <img src="./table images/Icon (9).png" alt="">
+    
+                                            <div class="flex flex-col gap-y-[2px]">
+                                                <div class="text-[16px]">Bill & Taxes</div>
+                                                <div class="text-[#A0AEC0]">Today, 16:36</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="text-[16px] font-bold">-$154.50</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Center: Balance Card -->
+                            <div class="col-span-1 w-[100%]">
+                                <!-- Payment Method -->
+                                <div class="px-6 pt-[22px] pb-[26px] rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(128.44deg,_rgba(6,11,40,0.94)_27.178%,_rgba(10,14,35,0.49)_89.94%)]">
+                                    <div class="flex justify-between mb-6">
+                                        <h3 class="text-[18px] font-bold">Payment Method</h3>
+                                        <!-- Add Card Button -->
+                                        <div class="">
+                                            <button class="rounded-[12px] w-[135px] h-[35px] flex justify-center text-[12px] font-bold items-center bg-[rgb(0,117,255)]">
+                                                ADD A NEW CARD
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-7 max-[777px]:flex-col">
+                                        <div class="flex w-[50%] items-center justify-between rounded-[20px] bg-[url('./table%20images/Mastercard.png')] bg-cover bg-no-repeat p-5 max-[777px]:w-full">
+                                            <p class="text-sm flex items-center gap-x-[15px]"><img src="./table images/Mastercard Icon.svg" alt=""> 7812 2139 0823 XXXX</p>
+                                            <button class="text-white opacity-60 hover:opacity-100 transition">✎</button>
+                                        </div>
+                                        <div class="flex w-[50%] items-center justify-between rounded-[20px] bg-[url('./table%20images/Mastercard.png')] bg-cover bg-no-repeat p-3 max-[777px]:w-full">
+                                            <p class="text-sm flex items-center gap-x-[15px]"><img src="./table images/Visa Icon.png" alt=""> 7812 2139 0823 XXXX</p>
+                                            <button class="text-white opacity-60 hover:opacity-100 transition">✎</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <!-- Right: Invoices -->
+                        <div class="w-[40%] col-span-1 p-6 pb-[47px] rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(128.44deg,_rgba(6,_11,_40,_0.94)_22.957%,_rgba(10,_14,_35,_0.49)_82.714%)] flex flex-col max-[1025px]:w-[100%]">
+                          <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-lg font-bold">Invoices</h3>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold w-[110px] h-[35px] flex justify-center items-center text-xs px-4 py-1 rounded-[12px]">VIEW ALL</button>
+                          </div>
+                      
+                          <div class="space-y-4 text-sm flex flex-col gap-y-[15px]">
+                            <div class="flex justify-between items-center h-[42px]">
+                              <div>
+                                <div>March 01, 2020</div>
+                                <div class="text-xs opacity-50">#MS-415646</div>
+                              </div>
+                              <div class="flex gap-2 items-center">
+                                <div>$180</div>
+                                <div class="flex gap-1">📄 <span>PDF</span></div>
+                              </div>
+                            </div>
+                            <div class="flex justify-between items-center h-[42px]">
+                              <div>
+                                <div>February 10, 2021</div>
+                                <div class="text-xs opacity-50">#RV-126749</div>
+                              </div>
+                              <div class="flex gap-2 items-center">
+                                <div>$250</div>
+                                <div class="flex gap-1">📄 <span>PDF</span></div>
+                              </div>
+                            </div>
+                            <div class="flex justify-between items-center h-[42px]">
+                              <div>
+                                <div>April 05, 2020</div>
+                                <div class="text-xs opacity-50">#FB-212562</div>
+                              </div>
+                              <div class="flex gap-2 items-center">
+                                <div>$560</div>
+                                <div class="flex gap-1">📄 <span>PDF</span></div>
+                              </div>
+                            </div>
+                            <div class="flex justify-between items-center h-[42px]">
+                              <div>
+                                <div>June 25, 2019</div>
+                                <div class="text-xs opacity-50">#QW-103578</div>
+                              </div>
+                              <div class="flex gap-2 items-center">
+                                <div>$120</div>
+                                <div class="flex gap-1">📄 <span>PDF</span></div>
+                              </div>
+                            </div>
+                            <div class="flex justify-between items-center h-[42px]">
+                              <div>
+                                <div>March 01, 2019</div>
+                                <div class="text-xs opacity-50">#AR-803481</div>
+                              </div>
+                              <div class="flex gap-2 items-center">
+                                <div>$300</div>
+                                <div class="flex gap-1">📄 <span>PDF</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>  
+            </section>
+
+            <!--  -->
+            <section class="mb-6">
+                <div class="container w-[100%] mx-auto">
+                    <div class="flex gap-6 text-white font-sans max-[1025px]:flex-col">
+
+                        <!-- Billing Information -->
+                        <div class="lg:col-span-2 w-[60%] p-[22px] pt-[28px] rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(128.44deg,_rgba(6,_11,_40,_0.94)_23.494%,_rgba(10,_14,_35,_0.49)_83.633%)] max-[1025px]:w-full">
+                          <h2 class="text-lg font-bold mb-[17px]">Billing Information</h2>
+                      
+                          <!-- Billing Card -->
+                          <div class="mb-[24px] rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(128.44deg,_rgba(24,_29,_60,_0.94)_27.359%,_rgba(10,_14,_35,_0.49)_90.248%)] p-4 flex justify-between items-start">
+                            <div>
+                              <p class="text-[14px] mb-1">Oliver Liam</p>
+                              <p class="text-sm text-gray-300">Company Name: Viking Burrito</p>
+                              <p class="text-sm text-gray-300">Email Address: <a href="mailto:oliver@burrito.com">oliver@burrito.com</a></p>
+                              <p class="text-sm text-gray-300">VAT Number: FRB1235476</p>
+                            </div>
+                            <div class="text-sm flex gap-4">
+                              <button class="text-[#F53C2B] text-[12px] flex items-center gap-2">
+                                <img src="./table images/Vector (37).png"> DELETE
+                              </button>
+                              <button class="text-[#A0AEC0] text-[12px] flex items-center gap-x-2"><img src="./table images/Vector (38).png" alt=""> EDIT</button>
+                            </div>
+                          </div>
+                      
+                          <!-- Copy 2 and 3 -->
+                          <div class="mb-[24px] rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(128.44deg,_rgba(24,_29,_60,_0.94)_27.359%,_rgba(10,_14,_35,_0.49)_90.248%)] p-4 flex justify-between items-start">
+                            <div>
+                              <p class="text-[14px] mb-1">Oliver Liam</p>
+                              <p class="text-sm text-gray-300">Company Name: Viking Burrito</p>
+                              <p class="text-sm text-gray-300">Email Address: <a href="mailto:oliver@burrito.com">oliver@burrito.com</a></p>
+                              <p class="text-sm text-gray-300">VAT Number: FRB1235476</p>
+                            </div>
+                            <div class="text-sm flex gap-4">
+                              <button class="text-[#F53C2B] text-[12px] flex items-center gap-2">
+                                <img src="./table images/Vector (37).png"> DELETE
+                              </button>
+                              <button class="text-[#A0AEC0] text-[12px] flex items-center gap-x-2"><img src="./table images/Vector (38).png" alt=""> EDIT</button>
+                            </div>
+                          </div>
+                      
+                          <div class="mb-[24px] rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(128.44deg,_rgba(24,_29,_60,_0.94)_27.359%,_rgba(10,_14,_35,_0.49)_90.248%)] p-4 flex justify-between items-start">
+                            <div>
+                              <p class="text-[14px] mb-1">Oliver Liam</p>
+                              <p class="text-sm text-gray-300">Company Name: Viking Burrito</p>
+                              <p class="text-sm text-gray-300">Email Address: <a href="mailto:oliver@burrito.com">oliver@burrito.com</a></p>
+                              <p class="text-sm text-gray-300">VAT Number: FRB1235476</p>
+                            </div>
+                            <div class="text-sm flex gap-4">
+                              <button class="text-[#F53C2B] text-[12px] flex items-center gap-2">
+                                <img src="./table images/Vector (37).png"> DELETE
+                              </button>
+                              <button class="text-[#A0AEC0] text-[12px] flex items-center gap-x-2"><img src="./table images/Vector (38).png" alt=""> EDIT</button>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Transactions -->
+                        <div class="w-[40%] p-[22px] pt-[28px] rounded-[20px] backdrop-blur-[120px] bg-[linear-gradient(128.44deg,_rgba(6,_11,_40,_0.94)_21.29%,_rgba(10,_14,_35,_0.49)_79.86%)] max-[1025px]:w-full">
+                            <div class="flex justify-between items-center mb-4">
+                              <h2 class="text-lg font-bold">Your Transactions</h2>
+                              <span class="text-sm text-[#A0AEC0] flex gap-[6px] items-center"><img src="./table images/IONIcon_C_calendar_outline.png" alt=""> 23 – 30 March 2020</span>
+                            </div>
+                          
+                            <!-- Newest -->
+                            <p class="text-xs text-gray-400 mb-[17px]">NEWEST</p>
+
+                            <div class="space-y-4 mb-6">
+                              <!-- Netflix -->
+                              <div class="flex justify-between items-center">
+                                <div class="flex items-center space-x-3">
+                                  <img src="./table images/Icon (11).png" alt="">
+                                  <div>
+                                    <p class="font-bold">Netflix</p>
+                                    <p class="text-[14px] text-[#A0AEC0]">27 March 2020, at 12:30 PM</p>
+                                  </div>
+                                </div>
+                                <span class="text-[#A0AEC0] text-sm">- $2500</span>
+                              </div>
+                          
+                              <!-- Apple -->
+                              <div class="flex justify-between items-center">
+                                <div class="flex items-center space-x-3">
+                                  <img src="./table images/Icon (10).png" alt="">
+                                  <div>
+                                    <p class="font-bold">Apple</p>
+                                    <p class="text-[14px] text-gray-400">27 March 2020, at 12:30 PM</p>
+                                  </div>
+                                </div>
+                                <span class="text-green-400 text-sm">+ $2500</span>
+                              </div>
+                            </div>
+                          
+                            <!-- Yesterday -->
+                            <p class="text-xs text-[#A0AEC0] mb-4">YESTERDAY</p>
+
+                            <div class="flex flex-col gap-y-[21px]">
+                              <!-- Stripe -->
+                              <div class="flex justify-between items-center">
+                                <div class="flex items-start space-x-3">
+                                  <img src="./table images/Icon (10).png" alt="">
+                                  <div>
+                                    <p class="font-semibold">Stripe</p>
+                                    <p class="text-xs text-gray-400">26 March 2020, at 13:45 PM</p>
+                                  </div>
+                                </div>
+                                <span class="text-green-400 text-sm">+ $800</span>
+                              </div>
+                          
+                              <!-- HubSpot -->
+                              <div class="flex justify-between items-center">
+                                <div class="flex items-start space-x-3">
+                                  <img src="./table images/Icon (10).png" alt="">
+                                  <div>
+                                    <p class="font-semibold">HubSpot</p>
+                                    <p class="text-xs text-gray-400">26 March 2020, at 12:30 PM</p>
+                                  </div>
+                                </div>
+                                <span class="text-green-400 text-sm">+ $1700</span>
+                              </div>
+                          
+                              <!-- Webflow -->
+                              <div class="flex justify-between items-center">
+                                <div class="flex items-start space-x-3">
+                                    <img src="./table images/Icon (12).png" alt="">
+                                  <div>
+                                    <p class="font-semibold">Webflow</p>
+                                    <p class="text-xs text-gray-400">26 March 2020, at 05:00 AM</p>
+                                  </div>
+                                </div>
+                                <span class="text-[#A0AEC0] text-sm">Pending</span>
+                              </div>
+                          
+                              <!-- Microsoft -->
+                              <div class="flex justify-between items-center">
+                                <div class="flex items-start space-x-3">
+                                  <img src="./table images/Icon (11).png" alt="">
+                                  <div>
+                                    <p class="font-semibold">Microsoft</p>
+                                    <p class="text-xs text-gray-400">25 March 2020, at 16:30 PM</p>
+                                  </div>
+                                </div>
+                                <span class="text-[#A0AEC0] text-sm">- $987</span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  -->
+            <footer class="mb-[30px]">
+                <div class="container w-[100%] mx-auto flex justify-between max-[768px]:flex-col max-[768px]:gap-y-[20px] max-[768px]:items-center">
+                    <p class="max-[1025px]:text-[14px] max-[490px]:text-center">@ 2021, Made with ❤️ by <span class="font-semibold">Simmmple & Creative</span> Tim for a better web</p>
+
+                    <ul class="flex gap-x-[45px] max-[1025px]:gap-x-[20px]">
+                        <li><a class="leading-[150%]" href="#">Marketplace</a></li>
+                        <li><a class="leading-[150%]" href="#">Blog</a></li>
+                        <li><a class="leading-[150%]" href="#">License</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="absolute top-[-200%] right-[0] transition-all duration-500 ease-in-out z-40 
+            max-w-[265px] w-full h-[800px] bg-[linear-gradient(157.2deg,rgba(6,11,38,0.94)_31.883%,rgba(26,31,55,0)_100%)] 
+            pt-[36px] pl-[15px] pr-[15px] rounded-l-[20px] backdrop-blur-[120px] overflow-x-auto">
+
+    <!-- Sidebar content -->
+    <div class="sidebar-header mb-[22px]">
+    <h2 class="mb-[31px] bg-[linear-gradient(170.74deg,_rgb(255,255,255),_rgba(117,122,140,0))] bg-clip-text text-transparent font-[400] leading-[100%] tracking-[0.18em] text-center ">VISION UI FREE</h2>
+    <img class="w-full" src="./images/left-slidebar-header-line.png" alt="">
+    </div>
+
+    <div class="sidebar-menu pl-[7px] pr-[7px]">
+    <ul class="list-none flex flex-col gap-[12px]">
+    <li class="group">
+        <a href="./dashboard.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+        <img src="./images/Dashboard (2).png" alt="">
+        Dashboard
+        </a>
+    </li>
+    <li class="group">
+        <a href="./tables_page.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+        <img src="./images/slider-left-menu2.png" alt="">
+        Tables
+        </a>
+    </li>
+    <li class="group">
+        <a href="./billing_pages.html" class="silka h-[54px] rounded-[15px] shadow-md bg-[#1A1F37] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+        <img src="./images/Billing.png" alt="">
+        Billing
+        </a>
+    </li>
+    </ul>
+
+    <h3 class="text-[16px] text-[#FFF] ml-[16px] mt-[25px] mb-[25px]">ACCOUNT PAGES</h3>
+
+    <ul class="list-none flex flex-col gap-[12px]">
+    <li class="group">
+        <a href="./profile_page.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+        <img src="./images/Profile.png" alt="">
+        Profile
+        </a>
+    </li>
+    <li class="group">
+        <a href="./index.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+        <img src="./images/Sign In.png" alt="">
+        Sign In
+        </a>
+    </li>
+    <li class="group">
+        <a href="./sign_up.html" class="silka h-[54px] pt-[12px] pb-[12px] pl-[16px] flex items-center gap-x-[15px] hover:bg-[#1A1F37] text-[#FFF] transition-all duration-300">
+            <img src="./images/Sign Up.png" alt="">
+            Sign Up
+            </a>
+        </li>
+        </ul>
+        </div>
+
+        <a href="#">
+        <img src="./images/Need Help.png" alt="" class="absolute left-[15px] bottom-[23px]">
+        </a>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
