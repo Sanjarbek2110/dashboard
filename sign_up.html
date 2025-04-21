@@ -136,6 +136,15 @@
                 </p>
             </form>
             <script>
+              document.getElementById("signInBtn").addEventListener("click", () => {
+                const name = document.getElementById("name").value;
+                localStorage.setItem("profileName", name);
+                
+                // boshqa sign up jarayonlaring bo'lsa, shu yerga yozasiz...
+                
+                // Masalan: location.href = "profile.html";
+              });
+
                 document.getElementById("signupForm").addEventListener("submit", function (e) {
                   e.preventDefault();
               
