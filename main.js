@@ -120,4 +120,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  document.getElementById("signInBtn").addEventListener("click", () => {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("signupEmail").value;
+
+    if (name && email) {
+      localStorage.setItem("profileName", name);
+      localStorage.setItem("profileEmail", email);
+
+      // Profil sahifasiga yo‘naltirish (agar boshqa sahifa bo‘lsa)
+      window.location.href = "profile.html";
+    } else {
+      alert("Iltimos, barcha maydonlarni to‘ldiring.");
+    }
+  });
 });
